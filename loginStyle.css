@@ -1,0 +1,216 @@
+.container {
+    height: 100vh;
+    display: flex;
+}
+a {
+    color: rgb(28, 28, 161);
+}
+
+.details,
+.form-container {
+    flex: 1;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.details {
+    background: linear-gradient(230deg, rgb(27, 8, 123), rgb(59, 59, 246));
+    color: #f2f2f2;
+}
+
+.details .head,
+.flex-container {
+    display: flex;
+    gap: 12px;
+}
+.details .head p {
+    margin-bottom: 18px;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+.foot {
+    margin-top: 18px;
+}
+.flex-container {
+    margin-top: 18px;
+}
+.details h2,
+.details h3,
+.details h4, 
+.details h5,
+.details p {
+    margin: 0;
+}
+.details p {
+    margin-top: 12px; 
+    color: #f4f4f4;
+} 
+.icon i {
+    background: rgb(28, 28, 161);
+    border-radius: 6px;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #e6f0ff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container p{
+    text-align: center;
+}
+.form-container .title {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.form-container .title i {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container .title h3,
+.form-container .title p {
+    text-align: start;
+    margin: 0;
+}
+
+.form-container form {
+    background-color: #fff;
+    max-width: 420px;
+    color: #333;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 22px;
+}
+.form-container form i {
+    color: #888;
+}
+.form-container .fa-eye,
+.form-container .fa-eye-slash {
+    cursor: pointer;
+}
+.form-container form input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.form-container form .username-input-container,
+.form-container form .password-input-container{
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.rememberme-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.rememberme-forgot .rememberme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.rememberme-forgot .rememberme input {
+    margin: 0;
+    width: fit-content;
+}
+.submit {
+    width: 100%;
+    background: rgb(59, 59, 246);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    color: #f2f2f2;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(59, 59, 246, 0.245);
+    transition: .3s;
+}
+.submit .fa-arrow-right {
+    color: #f2f2f2;
+}
+.submit:hover {
+    background: rgb(54, 54, 221);
+}
+.form-container .foot {
+    margin-top: 22px;
+    border-top: 1px solid #ccc;
+}
+.form-container .foot .link {
+    text-align: center;
+}
+.form-container .foot .first-time-login {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 10px;
+    background: rgba(43, 124, 255, 0.149);
+}
+.form-container .foot .first-time-login .info h5,
+.form-container .foot .first-time-login .info p {
+    margin: 4px;
+}
+.form-container .foot .first-time-login .info p {
+    text-align: start;
+}
+.form-container .foot .first-time-login i {
+    background-color: transparent;
+    color: rgb(54, 54, 221);
+}
+
+.fa-key {
+    padding: 8px;
+    color: #f2f2f2 !important;
+    margin-right: 8px;
+    border-radius: 6px;
+    background: rgb(54, 54, 221);
+}
+.msg-error {
+    background: #ffebeb;
+    border-radius: 8px;
+    padding: 22px 12px;
+    border: 1px solid rgb(117, 19, 19);
+    color: rgb(117, 19, 19);
+}
+
+.form-container form .username-input-container.error,
+.form-container form .password-input-container.error {
+    border: 1px solid rgb(117, 19, 19);
+    background: #ffebeb;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        height: 200vh;
+    }
+    .form-container form {
+        max-width: 350px;
+        font-size: 12px; 
+    }
+}

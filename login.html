@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP | Login</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Public CSS -->
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="details">
+                <div class="head">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="title">
+                        <h4>ERP SYSTEM</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi assumenda excepturi.</p>
+                    </div>
+                </div>
+                <h2>Lorem ipsum dlit. Illo eos assumenda facere quidem, quasi ipsum obcaecati!</h2>
+                <p>Lorem ipjhesuf deiuyew iewdw sum dolor sit amet consectetur adipisicing elit. Dolores alias eum iste quibusdam sint necessitatibus excepturi earum maiores temporibus quisquam.</p>
+                <div class="foot">
+                    <div class="flex-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="info">
+                            <h4>ant thing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="info">
+                            <h4>ant thing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="info">
+                            <h4>ant thing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="" method="post">
+                    <div class="head">
+                        <div class="title">
+                            <i class="fa-solid fa-key"></i>
+                            <div>
+                                <h3>Sign in</h3>
+                                <p>Lorem ipsum dolor Voluptatem, aliquam eum?</p>
+                            </div>
+                        </div>
+                        <p class="msg-error">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <label for="username">Username or Email</label>
+                    <div class="username-input-container error">
+                        <i class="fas fa-user"></i>
+                        <input type="text" 
+                        name="username" 
+                        id="username"
+                        placeholder="Enter Username or Email"
+                        >
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="password-input-container error">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" 
+                        name="password" 
+                        id="password"
+                        placeholder="Enter your password"
+                        >
+                        <i class="fa-solid fa-eye" style="display: none;"></i>
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <div class="rememberme-forgot">
+                        <div class="rememberme">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Rememeber me</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit">
+                        Sign in
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="foot">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="link">
+                            <i class="fas fa-comments"></i>
+                            <a href="">contact with administrator</a>
+                        </div>
+                        <div class="first-time-login">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                            <div class="info">
+                                <h5>New User?</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, doloribus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p>&copy; 2026 ERP SYSTEM All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            const eye = document.querySelector(".fa-eye");
+            const eyeSlash = document.querySelector(".fa-eye-slash");
+            const password = document.getElementById("password");
+
+            function togglePassword() {
+                const isPassword = password.type === "password";
+
+                password.type = isPassword ? "text" : "password";
+                eye.style.display = isPassword ? "block" : "none";
+                eyeSlash.style.display = isPassword ? "none" : "block";
+            }
+
+            eye.addEventListener("click", togglePassword);
+            eyeSlash.addEventListener("click", togglePassword);
+
+        </script>
+    </body>
+</html>

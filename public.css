@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body {
+    font-family: 'Tajawal';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button,
+label,
+input[type="checkbox"] {
+    cursor: pointer;
+}
