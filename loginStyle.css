@@ -3,7 +3,7 @@
     display: flex;
 }
 a {
-    color: rgb(28, 28, 161);
+    color: rgb(84, 104, 253);
 }
 
 .details,
@@ -15,7 +15,7 @@ a {
     justify-content: center;
 }
 .details {
-    background: linear-gradient(230deg, rgb(27, 8, 123), rgb(59, 59, 246));
+    background: linear-gradient(230deg, rgb(56, 13, 128), rgb(84, 104, 253));
     color: #f2f2f2;
 }
 
@@ -47,7 +47,7 @@ a {
     color: #f4f4f4;
 } 
 .icon i {
-    background: rgb(28, 28, 161);
+    background: rgb(84, 104, 253);
     border-radius: 6px;
     padding: 10px;
     width: 15px;
@@ -141,7 +141,7 @@ a {
 }
 .submit {
     width: 100%;
-    background: rgb(59, 59, 246);
+    background: rgb(84, 104, 253);
     border-radius: 8px;
     padding: 10px;
     display: flex;
@@ -150,14 +150,14 @@ a {
     align-items: center;
     color: #f2f2f2;
     font-weight: 600;
-    box-shadow: 0 8px 20px rgba(59, 59, 246, 0.245);
+    box-shadow: 0 8px 20px rgba(72, 116, 249, 0.304);
     transition: .3s;
 }
 .submit .fa-arrow-right {
     color: #f2f2f2;
 }
 .submit:hover {
-    background: rgb(54, 54, 221);
+    background: rgb(64, 83, 227);
 }
 .form-container .foot {
     margin-top: 22px;
@@ -183,7 +183,7 @@ a {
 }
 .form-container .foot .first-time-login i {
     background-color: transparent;
-    color: rgb(54, 54, 221);
+    color: rgb(84, 104, 253);
 }
 
 .fa-key {
@@ -191,7 +191,7 @@ a {
     color: #f2f2f2 !important;
     margin-right: 8px;
     border-radius: 6px;
-    background: rgb(54, 54, 221);
+    background: rgb(84, 104, 253);
 }
 .msg-error {
     background: #ffebeb;
