@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="sidebar">
+        <div class="title">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>AkramDashboard</h3>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="links active">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Dashbord
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="links">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="links">
+                        <i class="fas fa-user"></i>
+                        Employees
+                    </a>
+                </li>
+                <li>
+                     <a href="" class="links">
+                        <i class="fas fa-key"></i>
+                        Permissions
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="links">
+                        <i class="fas fa-print"></i>
+                        Printing
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="links">
+                        <i class="fas fa-list"></i>
+                        Logs
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section class="main">
+        <header>
+            <i class="fas fa-bars menue"></i>
+            <form action="" method="get">
+                <div class="search">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="search" name="" id="" placeholder="Search users, employees, logs...">
+                </div>
+            </form>
+            <div class="noti-user">
+                <div class="notifecation">
+                    <a href="">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <a href="">
+                        <img src="img/p1.jpg" alt="user">
+                    </a>
+                    <div class="info">
+                        <h5>Akram Fattah</h5>
+                        <p>System Admin</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="head">
+                <h3>System Dashboard</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad debitis ipsum!</p>
+            </div>
+            <div class="search-main">
+                <form action="" method="get">
+                    <div class="search">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input type="search" name="" id="" placeholder="Search users, employees, logs...">
+                    </div>
+                </form>
+            </div>
+            <div class="simple-static">
+                <div>
+                    <div class="static">
+                        <i class="fas fa-users"></i>
+                        <div class="today-users">
+                            +12 today
+                        </div>
+                    </div>
+                    <h4>2,840</h4>
+                    <p>Total users</p>
+                </div>
+                <div>
+                    <div class="static">
+                        <i class="fas fa-user"></i>
+                        <div class="today-employees">
+                            +122 today
+                        </div>
+                    </div>
+                    <h4>5,840</h4>
+                    <p>Total employees</p>
+                </div>
+                <div>
+                    <div class="static">
+                        <i class="fas fa-print"></i>
+                        <div class="total-prints">
+                            +45 today
+                        </div>
+                    </div>
+                    <h4>8,976</h4>
+                    <p>Printing</p>
+                </div>
+                <div>
+                    <div class="static">
+                        <i class="fas fa-key"></i>
+                        <div class="active">
+                            Active
+                        </div>
+                    </div>
+                    <h4>140</h4>
+                    <p>Permissions</p>
+                </div>
+            </div>
+            <div class="charts-and-top-users">
+                <div class="activity-overveiw">
+                    <canvas id="users-employees-print-chart"></canvas> 
+                </div>
+                <div class="top-users">
+                    <h4>Top Users by Employee Added</h4>
+                    <div class="line">
+                        <div class="img-info">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <h5>John Doe</h5>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <h5>312</h5>
+                            <p>Emploees</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="img-info">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <h5>John Doe</h5>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <h5>312</h5>
+                            <p>Emploees</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="img-info">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <h5>John Doe</h5>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <h5>312</h5>
+                            <p>Emploees</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="img-info">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <h5>John Doe</h5>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <h5>312</h5>
+                            <p>Emploees</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="img-info">
+                            <img src="img/p1.jpg" alt="">
+                            <div>
+                                <h5>John Doe</h5>
+                                <p>Team Lead</p>
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <h5>312</h5>
+                            <p>Emploees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-oprations-your-permissions">
+                <div class="last-opration">
+                    <div class="head">
+                        <div>
+                            <i class="fas fa-history"></i>
+                            <h4>Last opration</h4>
+                        </div>
+                        <p>Last 7 day</p>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <i class="fas fa-user-plus"></i>
+                            <div class="info">
+                                <h4>Create new user</h4>
+                                <p>User: Akram Ahmed Fattah</p>
+                                <p>Hr maneger</p>
+                            </div>
+                        </div>
+                        <p>34 minites ago</p>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <i class="fas fa-user-xmark delete-user"></i>
+                            <div class="info">
+                                <h4>Delete a user</h4>
+                                <p>User: Ali Ebragim</p>
+                                <p>Teck lead</p>
+                            </div>
+                        </div>
+                        <p>34 minites ago</p>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <i class="fas fa-print print"></i>
+                            <div class="info">
+                                <h4>Print Report</h4>
+                                <p>Type: Print A user lists</p>
+                                <p>Users printing functionality</p>
+                            </div>
+                        </div>
+                        <p>34 minites ago</p>
+                    </div>
+                    <div class="foot">
+                        <a href="">
+                            View All Oprations
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="your-permissions">
+                    <div class="head">
+                        <div>
+                            <i class="fas fa-user-shield"></i>
+                            <h4>Your Permissions</h4>
+                        </div>
+                        <p>Active</p>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <i class="fas fa-lock create-user"></i>
+                            <div class="info">
+                                <h4>View statics</h4>
+                                <p>View statics info in dashbord</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="foot">
+                        <a href="">
+                            View All Oprations
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menue = document.querySelector('.menue')
+        const sideBar = document.querySelector('.sidebar')
+        const overlay = document.querySelector('.overlay')
+
+        menue.addEventListener('click', () => {
+            sideBar.classList.add('active')
+            overlay.classList.add('active')
+        })
+        overlay.addEventListener('click', () => {
+            sideBar.classList.remove('active')
+            overlay.classList.remove('active')
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('users-employees-print-chart').getContext('2d');
+
+        const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Sun','Mon','Tus','Wen','Thur','Fri','Sat'],
+            datasets: [
+            {
+                label: 'Users',
+                data: [120, 150, 100, 180, 90, 130, 160],
+                backgroundColor: 'rgba(255, 99, 132, 0.6)'
+            },
+            {
+                label: 'Employees',
+                data: [40, 50, 45, 60, 35, 55, 50],
+                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            },
+            {
+                label: 'Printing',
+                data: [200, 250, 180, 300, 220, 270, 310],
+                backgroundColor: 'rgba(255, 206, 86, 0.6)'
+            }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                labels: { color: '#555', font: { size: 10 } }
+            },
+            title: {
+                display: true,
+                text: 'Top Users by employees Added - last week',
+                color: '#444',
+                font: { size: 14 }
+            }
+            },
+            scales: {
+            x: {
+                ticks: { color: '#555' },
+                stacked: false
+            },
+            y: {
+                ticks: { color: '#555' },
+                beginAtZero: true
+            }
+            }
+        }
+        });
+  </script>
+</body>
+</html>
