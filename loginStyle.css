@@ -90,6 +90,7 @@ a {
 }
 
 .form-container form {
+    font-size: 14px;
     background-color: #fff;
     max-width: 280px;
     color: #333;
