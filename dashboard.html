@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="public.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="sidebarStyle.css">
 </head>
 <body>
     <div class="overlay"></div>
@@ -56,6 +57,17 @@
                 </li>
             </ul>
         </nav>
+        <div class="icons-info">
+            <a href="">
+                <i class="fas fa-location"></i>
+            </a>
+            <a href="">
+                <i class="fas fa-lock"></i>
+            </a>
+            <a href="">
+                <i class="fas fa-key"></i>
+            </a>
+        </div>
     </div>
     <section class="main">
         <header>
@@ -292,21 +304,8 @@
             </div>
         </div>
     </section>
-    <script>
-        const menue = document.querySelector('.menue')
-        const sideBar = document.querySelector('.sidebar')
-        const overlay = document.querySelector('.overlay')
-
-        menue.addEventListener('click', () => {
-            sideBar.classList.add('active')
-            overlay.classList.add('active')
-        })
-        overlay.addEventListener('click', () => {
-            sideBar.classList.remove('active')
-            overlay.classList.remove('active')
-        })
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="sidebarLogic.js"></script>
     <script>
         const ctx = document.getElementById('users-employees-print-chart').getContext('2d');
 

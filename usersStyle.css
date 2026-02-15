@@ -1,0 +1,156 @@
+
+.container .head {
+    margin-bottom: 22px;
+}
+.search-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.head-users {
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #cccccc76;
+    padding: 18px 12px 26px 12px   
+}
+
+.head-users .search {
+    max-width: 220px;
+}
+.head-users h3 {
+    margin: 0;
+}
+.head-users h3 span {
+    color: #555;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.head-users-container {
+    display: flex;
+    gap: 12px;
+}
+
+
+.select-set-permission {
+    padding: 0 22px;
+    height: 32.7px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(84, 104, 253, 0.1);
+    border-radius: 4px;
+}
+
+
+
+.select-set-permission .print {
+    border-left: 1px solid #ccc;
+    padding-left: 12px;
+    color: rgb(29, 193, 14);
+}
+.more-buttons {
+    margin-top: 18px;
+}
+.more-buttons button {
+    padding: 8px 12px;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: #f1f1f1;
+    background-color: rgb(84, 104, 253);
+}
+.more-buttons button:not(:first-child) {
+    margin-left: 8px;
+}
+
+
+
+
+
+.body-users {
+    background: #fff;
+}
+.table a,
+.table {
+    color: #555;
+}
+.table {
+    max-width: 100%;
+    overflow: auto;
+}
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table table tr:nth-child(even) {
+    background-color: rgba(184, 193, 253, 0.1);
+}
+
+.table table h4 {
+    margin: 0;
+}
+.table table a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.table table a:hover{
+    text-decoration: none;
+}
+.table img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.table thead {
+    border-bottom: 1px solid #cccccc76;
+}
+
+.table table td,
+.table table th {
+    text-align: center;
+    padding: 8px 12px;
+}
+.paganation {
+    position: absolute;
+    bottom: 44px;
+    right: 36px;
+    display: flex;
+    gap: 8px;
+}
+.paganation a {
+    padding: 10px;
+    background: rgb(84, 104, 253);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.paganation a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 967px) {
+    .head-users {
+        font-size: 10px;
+    }
+    .head-users-container {
+        flex-direction: column;
+    }
+    .table {
+        font-size: 11px;
+    }
+    .table table td,
+    .table table th {
+        text-align: center;
+        padding: 3px 8px;
+    }
+}
