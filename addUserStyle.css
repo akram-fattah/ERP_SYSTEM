@@ -1,0 +1,218 @@
+.account-info .head,
+.roles .head,
+.profile-depart-submit .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(84, 104, 253, 0.1);
+    padding-bottom: 12px;
+}
+.account-info .head h4, 
+.roles .head h4 {
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.account-info .head h4 i, 
+.roles .head h4 i {
+    color: rgb(84, 104, 253);
+}
+.account-info,
+.roles,
+.profile-depart-submit .profile ,
+.profile-depart-submit .submit
+{
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px 22px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.profile-depart-submit {
+    max-height: fit-content;
+}
+.roles {
+    margin-top: 12px;
+}
+.account-info .head .required {
+    background: rgba(84, 104, 253, 0.1);
+    border-radius: 22px;
+    color: #444;
+    padding: 2px 8px;
+}
+.head {
+    align-items: center;
+    display: flex;
+}
+.main-content form {
+    display: flex;
+    gap: 22px;
+}
+
+.form i {
+    color: #888;
+}
+.form .name,
+.form .password,
+.form .confirmPassword,
+.form .email {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+.form .name input, 
+.form .password input, 
+.form .confirmPassword input, 
+.form .email input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.form .passwords {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.form .passwords > div {
+    width: 100%;
+}
+
+.roles .select select {
+    width: 100%;
+    background: #f2f2f2;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.roles .info {
+    color: rgb(84, 104, 253);
+    padding: 12px 22px;
+    background: rgba(84, 104, 253, 0.1);
+    margin-top: 12px;
+    border-radius: 8px;
+}
+.roles .info span {
+    margin-left: 4px;
+}
+.roles .info ul {
+    padding: 0 28px;
+    margin: 0;
+    margin-top: 6px;
+    list-style: circle;
+}
+.roles .info ul li {
+    line-height: 1.2;
+}
+.more .static,
+.more .reports {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.more {
+    display: flex;
+    gap: 12px;
+}
+
+.more p,
+.more h5,
+.profile-depart-submit h4 {
+    margin: 0;
+}
+.profile-depart-submit {
+    padding: 0 22px;
+}
+.profile-depart-submit .img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.profile-depart-submit img {
+    height: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.profile-depart-submit .describe {
+    color: #555;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.profile-depart-submit .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.profile-depart-submit .btn button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: .3s;
+}
+.profile-depart-submit .btn .upload-btn {
+    border: 1px solid rgb(84, 104, 253);
+    background: rgba(84, 104, 253, 0.158);
+    color: rgb(84, 104, 253);
+}
+.profile-depart-submit .btn button:hover {
+    background: #d12323;
+    color: #f2f2f2;
+}
+.profile-depart-submit .btn .upload-btn:hover {
+    background: rgb(84, 104, 253);
+    color: #f2f2f2;
+}
+.profile-depart-submit .head {
+    justify-content: flex-start;
+    gap: 8px;
+}
+.info-roles {
+    width: 80%;
+}
+
+.profile-depart-submit .submit {
+    margin-top: 22px;
+    background: #fff;
+}
+.profile-depart-submit .submit input {
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    outline: none;
+    cursor: pointer;
+}
+.profile-depart-submit .submit .submit-container {
+    display: flex;
+    align-items: center;
+    background: rgb(84, 104, 253);
+    width: fit-content;
+    color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+.profile-depart-submit .submit .submit-container:hover {
+    background: rgb(139, 152, 252);
+}
+
+
+@media screen and (min-width: 1290px) {
+    .main-content form > div {
+        width: 100%;
+    }
+}
